@@ -44,15 +44,25 @@ iframe#tela {
     height: 471px;
 }
 
+/*Configuração dos botões*/
 section#redes-sociais {
-    text-align: right;
+    text-align: right; /*Alinhamento*/
 }
 
+/*Configuração dos botões das redes sociais*/
 section#redes-sociais img {
     width: 50px;
     /*height: 50px; - Colocar esse linha é opcional, pois alterando a largura, altera automaticamente a altura*/
     margin: 10px;
     border-radius: 50%; /*Essa função arredonda os cantos, nesse caso está arredondando os ícones*/
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+    box-sizing: border-box; /*Essa linha serve para que o border mova somente o ícone da rede social. Caso contrário irá movimentar todos os outros quando passar o mouse*/
 
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.664);
+    transform: translate(-3px, -3px); /*Para mexer no ícone.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664);/*Sombra para o ícone após mover quand passa o mouse.*/
+    transition: trasform 0.5s, border 1s;/*Linha que faz aparecer mais lento quando exibe a mudança do ícone, border 0.5s pra completar o círculo do ícone.*/
 }
