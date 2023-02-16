@@ -14,9 +14,11 @@ html, body {
 }
 
 body {
-    background: url('../imagens/redes\ sociais.jpg') no-repeat top center;
+    background: url('../fotos/fundo2.JPG') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+  
+    
 }
 
 main {
